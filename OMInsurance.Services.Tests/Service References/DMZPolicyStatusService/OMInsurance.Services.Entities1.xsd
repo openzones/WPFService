@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PolicyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientVisitDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DeliveryCenter" nillable="true" type="tns:DeliveryCenter" />
+      <xs:element minOccurs="0" name="DeliveryPoint" nillable="true" type="tns:DeliveryPoint" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="tns:PolicyStatus" />
+      <xs:element minOccurs="0" name="StatusDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PolicyInfo" nillable="true" type="tns:PolicyInfo" />
+  <xs:complexType name="DeliveryCenter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeliveryCenter" nillable="true" type="tns:DeliveryCenter" />
+  <xs:complexType name="DeliveryPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeliveryPoint" nillable="true" type="tns:DeliveryPoint" />
+  <xs:complexType name="PolicyStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PolicyStatus" nillable="true" type="tns:PolicyStatus" />
+  <xs:complexType name="Policy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApplicationMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AttachmentDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AttachmentMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Birthday" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BlankNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Citizenship" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientVisitDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DeliveryCenter" nillable="true" type="tns:DeliveryCenter" />
+      <xs:element minOccurs="0" name="DeliveryPoint" nillable="true" type="tns:DeliveryPoint" />
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LPU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NomernikStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PolicyNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PolicySeries" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PolicyStatus" nillable="true" type="tns:PolicyStatus" />
+      <xs:element minOccurs="0" name="Secondname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sex" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TemporaryPolicyNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnifiedPolicyNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Policy" nillable="true" type="tns:Policy" />
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secondname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="ArrayOfRegion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Region" nillable="true" type="tns:Region" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegion" nillable="true" type="tns:ArrayOfRegion" />
+  <xs:complexType name="Region">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Region" nillable="true" type="tns:Region" />
+</xs:schema>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PolicyStatusService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="SecuredByTransportEndpoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10 />
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:Wss10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy />
+        </sp:Wss10>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities.Core.Faults" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPolicyStatusService_GetStatusByUnifiedPolicyNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByUnifiedPolicyNumber" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByUnifiedPolicyNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByUnifiedPolicyNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByUnifiedPolicyNumber_DataObjectNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities.Core.Faults" name="detail" element="q1:DataObjectNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByNumber" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByNumber_DataObjectNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities.Core.Faults" name="detail" element="q2:DataObjectNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByTemporaryPolicyNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByTemporaryPolicyNumber" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByTemporaryPolicyNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByTemporaryPolicyNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByTemporaryPolicyNumber_DataObjectNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities.Core.Faults" name="detail" element="q3:DataObjectNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByFIOBirthday_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByFIOBirthday" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByFIOBirthday_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusByFIOBirthdayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetStatusByFIOBirthday_DataObjectNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities.Core.Faults" name="detail" element="q4:DataObjectNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetFIOByPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFIOByPhone" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetFIOByPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFIOByPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetFIOByPhone_DataObjectNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/OMInsurance.Services.Entities.Core.Faults" name="detail" element="q5:DataObjectNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetRegions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegions" />
+  </wsdl:message>
+  <wsdl:message name="IPolicyStatusService_GetRegions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPolicyStatusService">
+    <wsdl:operation name="GetStatusByUnifiedPolicyNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByUnifiedPolicyNumber" message="tns:IPolicyStatusService_GetStatusByUnifiedPolicyNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByUnifiedPolicyNumberResponse" message="tns:IPolicyStatusService_GetStatusByUnifiedPolicyNumber_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByUnifiedPolicyNumberDataObjectNotFoundFaultFault" name="DataObjectNotFoundFaultFault" message="tns:IPolicyStatusService_GetStatusByUnifiedPolicyNumber_DataObjectNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusByNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByNumber" message="tns:IPolicyStatusService_GetStatusByNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByNumberResponse" message="tns:IPolicyStatusService_GetStatusByNumber_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByNumberDataObjectNotFoundFaultFault" name="DataObjectNotFoundFaultFault" message="tns:IPolicyStatusService_GetStatusByNumber_DataObjectNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusByTemporaryPolicyNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByTemporaryPolicyNumber" message="tns:IPolicyStatusService_GetStatusByTemporaryPolicyNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByTemporaryPolicyNumberResponse" message="tns:IPolicyStatusService_GetStatusByTemporaryPolicyNumber_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByTemporaryPolicyNumberDataObjectNotFoundFaultFault" name="DataObjectNotFoundFaultFault" message="tns:IPolicyStatusService_GetStatusByTemporaryPolicyNumber_DataObjectNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusByFIOBirthday">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByFIOBirthday" message="tns:IPolicyStatusService_GetStatusByFIOBirthday_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByFIOBirthdayResponse" message="tns:IPolicyStatusService_GetStatusByFIOBirthday_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPolicyStatusService/GetStatusByFIOBirthdayDataObjectNotFoundFaultFault" name="DataObjectNotFoundFaultFault" message="tns:IPolicyStatusService_GetStatusByFIOBirthday_DataObjectNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFIOByPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyStatusService/GetFIOByPhone" message="tns:IPolicyStatusService_GetFIOByPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyStatusService/GetFIOByPhoneResponse" message="tns:IPolicyStatusService_GetFIOByPhone_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPolicyStatusService/GetFIOByPhoneDataObjectNotFoundFaultFault" name="DataObjectNotFoundFaultFault" message="tns:IPolicyStatusService_GetFIOByPhone_DataObjectNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyStatusService/GetRegions" message="tns:IPolicyStatusService_GetRegions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyStatusService/GetRegionsResponse" message="tns:IPolicyStatusService_GetRegions_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SecuredByTransportEndpoint" type="tns:IPolicyStatusService">
+    <wsp:PolicyReference URI="#SecuredByTransportEndpoint_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStatusByUnifiedPolicyNumber">
+      <soap:operation soapAction="http://tempuri.org/IPolicyStatusService/GetStatusByUnifiedPolicyNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataObjectNotFoundFaultFault">
+        <soap:fault use="literal" name="DataObjectNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusByNumber">
+      <soap:operation soapAction="http://tempuri.org/IPolicyStatusService/GetStatusByNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataObjectNotFoundFaultFault">
+        <soap:fault use="literal" name="DataObjectNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusByTemporaryPolicyNumber">
+      <soap:operation soapAction="http://tempuri.org/IPolicyStatusService/GetStatusByTemporaryPolicyNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataObjectNotFoundFaultFault">
+        <soap:fault use="literal" name="DataObjectNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusByFIOBirthday">
+      <soap:operation soapAction="http://tempuri.org/IPolicyStatusService/GetStatusByFIOBirthday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataObjectNotFoundFaultFault">
+        <soap:fault use="literal" name="DataObjectNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFIOByPhone">
+      <soap:operation soapAction="http://tempuri.org/IPolicyStatusService/GetFIOByPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataObjectNotFoundFaultFault">
+        <soap:fault use="literal" name="DataObjectNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <soap:operation soapAction="http://tempuri.org/IPolicyStatusService/GetRegions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PolicyStatusService">
+    <wsdl:port name="SecuredByTransportEndpoint" binding="tns:SecuredByTransportEndpoint">
+      <soap:address location="https://ws.uralsibins.ru/PolicyStatus/PolicyStatusService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

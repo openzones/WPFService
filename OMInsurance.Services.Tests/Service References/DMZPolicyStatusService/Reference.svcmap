@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="257f95a6-fae8-4c4f-8267-6ee417bbe9bd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ws.uralsibins.ru/PolicyStatus/PolicyStatusService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="f0cf0010-e036-454e-ab47-209e91cc741a" SourceId="1" SourceUrl="https://ws.uralsibins.ru/PolicyStatus/PolicyStatusService.svc/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="046ee5e7-7177-4279-ae6f-4233510117a5" SourceId="1" SourceUrl="https://ws.uralsibins.ru/PolicyStatus/PolicyStatusService.svc/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="7c1b7c1f-14fa-4552-af82-761a96d05bc5" SourceId="1" SourceUrl="https://ws.uralsibins.ru/PolicyStatus/PolicyStatusService.svc/mex" />
+    <MetadataFile FileName="OMInsurance.Services.Entities1.xsd" MetadataType="Schema" ID="fafb00a0-b602-481b-8dea-081bde747afe" SourceId="1" SourceUrl="https://ws.uralsibins.ru/PolicyStatus/PolicyStatusService.svc/mex" />
+    <MetadataFile FileName="OMInsurance.Services.Entities.Core.Faults1.xsd" MetadataType="Schema" ID="92c3f330-89ab-4e00-9f27-1da8dab862d5" SourceId="1" SourceUrl="https://ws.uralsibins.ru/PolicyStatus/PolicyStatusService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
