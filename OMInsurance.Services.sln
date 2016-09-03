@@ -1,0 +1,134 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.Interfaces", "OMInsurance.Services.Interfaces\OMInsurance.Services.Interfaces.csproj", "{F988AD02-0922-4A1E-A08D-BC2CE22CB0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.Tests", "OMInsurance.Services.Tests\OMInsurance.Services.Tests.csproj", "{138837D9-7C76-4725-94DC-0D61BA7381C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5592FD22-C760-4422-8F36-E226ADB8BBDE} = {5592FD22-C760-4422-8F36-E226ADB8BBDE}
+		{923D092B-C078-4FC9-AB16-FD4D5E554397} = {923D092B-C078-4FC9-AB16-FD4D5E554397}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DMZ", "DMZ", "{C38C8E45-CD7C-4E8A-B35E-2181AC1AD3CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.DMZ.PolicyStatusService", "OMInsurance.Services.DMZ.PolicyStatusService\OMInsurance.Services.DMZ.PolicyStatusService.csproj", "{923D092B-C078-4FC9-AB16-FD4D5E554397}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5592FD22-C760-4422-8F36-E226ADB8BBDE} = {5592FD22-C760-4422-8F36-E226ADB8BBDE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.AuthService", "OMInsurance.Services.AuthService\OMInsurance.Services.AuthService.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.IIS.Host", "OMInsurance.Services.PolicyStatusService.Host\OMInsurance.Services.IIS.Host.csproj", "{5592FD22-C760-4422-8F36-E226ADB8BBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.PolicyStatusService", "OMInsurance.Services.PolicyStatusService\OMInsurance.Services.PolicyStatusService.csproj", "{39706996-CE0C-4D03-B026-CD6830D6277E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.BusinessLogic", "OMInsurance.Services.BusinessLogic\OMInsurance.Services.BusinessLogic.csproj", "{540D8E6A-DCF0-4476-84A4-E87122D72B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.Utils", "OMInsurance.Services.Utils\OMInsurance.Services.Utils.csproj", "{88B9882A-92C7-4C07-B19C-2362022D7750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.Configuration", "OMInsurance.Services.Configuration\OMInsurance.Services.Configuration.csproj", "{CBCDBD33-86EA-43BC-AA9E-5D1B5A02893F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.DataAccess", "OMInsurance.Services.DataAccess\OMInsurance.Services.DataAccess.csproj", "{1B4472F9-CA26-4296-9F66-5010C795DA1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMInsurance.Services.Entities", "OMInsurance.Services.Entities\OMInsurance.Services.Entities.csproj", "{88F8110F-5870-48DF-89D7-A14F9B7EFC1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F988AD02-0922-4A1E-A08D-BC2CE22CB0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F988AD02-0922-4A1E-A08D-BC2CE22CB0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F988AD02-0922-4A1E-A08D-BC2CE22CB0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F988AD02-0922-4A1E-A08D-BC2CE22CB0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{138837D9-7C76-4725-94DC-0D61BA7381C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138837D9-7C76-4725-94DC-0D61BA7381C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138837D9-7C76-4725-94DC-0D61BA7381C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138837D9-7C76-4725-94DC-0D61BA7381C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{923D092B-C078-4FC9-AB16-FD4D5E554397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923D092B-C078-4FC9-AB16-FD4D5E554397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923D092B-C078-4FC9-AB16-FD4D5E554397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923D092B-C078-4FC9-AB16-FD4D5E554397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5592FD22-C760-4422-8F36-E226ADB8BBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5592FD22-C760-4422-8F36-E226ADB8BBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5592FD22-C760-4422-8F36-E226ADB8BBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5592FD22-C760-4422-8F36-E226ADB8BBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39706996-CE0C-4D03-B026-CD6830D6277E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39706996-CE0C-4D03-B026-CD6830D6277E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39706996-CE0C-4D03-B026-CD6830D6277E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39706996-CE0C-4D03-B026-CD6830D6277E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540D8E6A-DCF0-4476-84A4-E87122D72B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540D8E6A-DCF0-4476-84A4-E87122D72B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540D8E6A-DCF0-4476-84A4-E87122D72B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540D8E6A-DCF0-4476-84A4-E87122D72B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B9882A-92C7-4C07-B19C-2362022D7750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B9882A-92C7-4C07-B19C-2362022D7750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B9882A-92C7-4C07-B19C-2362022D7750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B9882A-92C7-4C07-B19C-2362022D7750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCDBD33-86EA-43BC-AA9E-5D1B5A02893F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCDBD33-86EA-43BC-AA9E-5D1B5A02893F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCDBD33-86EA-43BC-AA9E-5D1B5A02893F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCDBD33-86EA-43BC-AA9E-5D1B5A02893F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B4472F9-CA26-4296-9F66-5010C795DA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4472F9-CA26-4296-9F66-5010C795DA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4472F9-CA26-4296-9F66-5010C795DA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4472F9-CA26-4296-9F66-5010C795DA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F8110F-5870-48DF-89D7-A14F9B7EFC1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F8110F-5870-48DF-89D7-A14F9B7EFC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F8110F-5870-48DF-89D7-A14F9B7EFC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F8110F-5870-48DF-89D7-A14F9B7EFC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{923D092B-C078-4FC9-AB16-FD4D5E554397} = {C38C8E45-CD7C-4E8A-B35E-2181AC1AD3CD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://msk01-miotst01.uralsibins.ru:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OMInsurance.Services.DMZ.PolicyStatusService\\OMInsurance.Services.DMZ.PolicyStatusService.csproj
+		SccProjectTopLevelParentUniqueName1 = OMInsurance.Services.sln
+		SccProjectName1 = OMInsurance.Services.DMZ.PolicyStatusService
+		SccLocalPath1 = OMInsurance.Services.DMZ.PolicyStatusService
+		SccProjectUniqueName2 = OMInsurance.Services.AuthService\\OMInsurance.Services.AuthService.csproj
+		SccProjectName2 = OMInsurance.Services.AuthService
+		SccLocalPath2 = OMInsurance.Services.AuthService
+		SccProjectUniqueName3 = OMInsurance.Services.Interfaces\\OMInsurance.Services.Interfaces.csproj
+		SccProjectName3 = OMInsurance.Services.Interfaces
+		SccLocalPath3 = OMInsurance.Services.Interfaces
+		SccProjectUniqueName4 = OMInsurance.Services.PolicyStatusService.Host\\OMInsurance.Services.IIS.Host.csproj
+		SccProjectName4 = OMInsurance.Services.PolicyStatusService.Host
+		SccLocalPath4 = OMInsurance.Services.PolicyStatusService.Host
+		SccProjectUniqueName5 = OMInsurance.Services.PolicyStatusService\\OMInsurance.Services.PolicyStatusService.csproj
+		SccProjectName5 = OMInsurance.Services.PolicyStatusService
+		SccLocalPath5 = OMInsurance.Services.PolicyStatusService
+		SccProjectUniqueName6 = OMInsurance.Services.Tests\\OMInsurance.Services.Tests.csproj
+		SccProjectName6 = OMInsurance.Services.Tests
+		SccLocalPath6 = OMInsurance.Services.Tests
+		SccProjectUniqueName7 = OMInsurance.Services.BusinessLogic\\OMInsurance.Services.BusinessLogic.csproj
+		SccProjectName7 = OMInsurance.Services.BusinessLogic
+		SccLocalPath7 = OMInsurance.Services.BusinessLogic
+		SccProjectUniqueName8 = OMInsurance.Services.Utils\\OMInsurance.Services.Utils.csproj
+		SccProjectName8 = OMInsurance.Services.Utils
+		SccLocalPath8 = OMInsurance.Services.Utils
+		SccProjectUniqueName9 = OMInsurance.Services.Configuration\\OMInsurance.Services.Configuration.csproj
+		SccProjectName9 = OMInsurance.Services.Configuration
+		SccLocalPath9 = OMInsurance.Services.Configuration
+		SccProjectUniqueName10 = OMInsurance.Services.DataAccess\\OMInsurance.Services.DataAccess.csproj
+		SccProjectName10 = OMInsurance.Services.DataAccess
+		SccLocalPath10 = OMInsurance.Services.DataAccess
+		SccProjectUniqueName11 = OMInsurance.Services.Entities\\OMInsurance.Services.Entities.csproj
+		SccProjectName11 = OMInsurance.Services.Entities
+		SccLocalPath11 = OMInsurance.Services.Entities
+	EndGlobalSection
+EndGlobal
