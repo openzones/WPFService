@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dd950de7-b1c4-4a46-b627-f328d125c6c9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="OMInsurance.Services.Entities" />
+      <ReferencedAssembly AssemblyName="OMInsurance.Services.Interfaces" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.175.32.224:21236/PolicyStatusService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PolicyStatusService4.xsd" MetadataType="Schema" ID="1939afb1-b544-4435-aae2-b0f885a5c26f" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PolicyStatusService1.disco" MetadataType="Disco" ID="040e7fa5-613a-4c91-be51-0cc49c0b70e2" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?disco" />
+    <MetadataFile FileName="PolicyStatusService5.xsd" MetadataType="Schema" ID="4d00bd2f-2a5c-4264-b8cd-5f629efd9c93" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="69ef9938-c75f-4863-83bc-be8b8415db50" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?wsdl" />
+    <MetadataFile FileName="PolicyStatusService6.xsd" MetadataType="Schema" ID="ba6f0741-e875-4554-a4cd-0f3aac0a255e" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PolicyStatusService7.xsd" MetadataType="Schema" ID="650c5235-87b6-4eeb-becd-4a9d140a92ee" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

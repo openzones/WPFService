@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/OMInsurance.Entities" />
+  <xs:element name="GetStatusByUnifiedPolicyNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="unifiedPolicyNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusByUnifiedPolicyNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/OMInsurance.Entities" minOccurs="0" name="GetStatusByUnifiedPolicyNumberResult" nillable="true" type="q1:PolicyStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusByNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="series" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="number" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusByNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/OMInsurance.Entities" minOccurs="0" name="GetStatusByNumberResult" nillable="true" type="q2:PolicyStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusByTemporaryPolicyNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="temporaryPolicyNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusByTemporaryPolicyNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/OMInsurance.Entities" minOccurs="0" name="GetStatusByTemporaryPolicyNumberResult" nillable="true" type="q3:PolicyStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

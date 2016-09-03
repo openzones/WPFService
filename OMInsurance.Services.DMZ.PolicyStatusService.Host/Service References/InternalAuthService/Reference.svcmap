@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d5dcedc6-9367-4f0c-83c8-e44707ef3533" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="OMInsurance.Entities" />
+      <ReferencedAssembly AssemblyName="OMInsurance.Services.Interfaces" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.175.32.224:21236/AuthService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AuthService.xsd" MetadataType="Schema" ID="f22b5154-455f-4634-9b1c-aa7fc9109464" SourceId="1" SourceUrl="http://10.175.32.224:21236/AuthService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AuthService1.xsd" MetadataType="Schema" ID="ababb58a-2b8e-47b8-8c29-e7701ac448c0" SourceId="1" SourceUrl="http://10.175.32.224:21236/AuthService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthService.disco" MetadataType="Disco" ID="28a51151-d756-4613-9d07-8cabfc30791a" SourceId="1" SourceUrl="http://10.175.32.224:21236/AuthService.svc?disco" />
+    <MetadataFile FileName="AuthService2.xsd" MetadataType="Schema" ID="48ba537e-af63-4104-85e2-91ff2f461e28" SourceId="1" SourceUrl="http://10.175.32.224:21236/AuthService.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="152baff9-3d46-4b0f-9d94-7d7cc37789c5" SourceId="1" SourceUrl="http://10.175.32.224:21236/AuthService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8676c058-b58f-4a6f-934a-ba360fa6c97a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.175.32.224:21236/PolicyStatusService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PolicyStatusService1.xsd" MetadataType="Schema" ID="6d3ee4df-a905-41ea-9d4a-11b9fa540a9e" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PolicyStatusService.disco" MetadataType="Disco" ID="7ab9f46f-5bb8-4ba7-a3b2-bcd8709aeede" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?disco" />
+    <MetadataFile FileName="PolicyStatusService.xsd" MetadataType="Schema" ID="20fe150b-9d56-486c-9586-10b7858d3c80" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="49664a3d-510b-4220-80af-17f1e6c295fe" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?wsdl" />
+    <MetadataFile FileName="PolicyStatusService2.xsd" MetadataType="Schema" ID="2c2a6691-9271-4f16-bcb4-cd29d3a00836" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PolicyStatusService21.xsd" MetadataType="Schema" ID="93a90135-1ad9-4d9d-98f1-f65794c6e7e0" SourceId="1" SourceUrl="http://10.175.32.224:21236/PolicyStatusService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
